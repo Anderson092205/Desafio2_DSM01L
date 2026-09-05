@@ -3,21 +3,21 @@
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
     
-    <!-- Modern Color Palette -->
+    <!-- Modern Palette -->
     <color name="primary">#4F46E5</color>
     <color name="primary_dark">#3730A3</color>
     <color name="primary_light">#EEF2FF</color>
     <color name="secondary">#0EA5E9</color>
     <color name="accent">#8B5CF6</color>
     
-    <!-- Neutral / Backgrounds -->
+    <!-- Backgrounds & Surfaces -->
     <color name="background_light">#F8FAFC</color>
     <color name="surface_card">#FFFFFF</color>
     <color name="surface_card_stroke">#E2E8F0</color>
     <color name="text_primary">#0F172A</color>
     <color name="text_secondary">#64748B</color>
     
-    <!-- Status / Feedback Colors -->
+    <!-- Status / Feedback -->
     <color name="success">#10B981</color>
     <color name="success_light">#D1FAE5</color>
     <color name="error">#EF4444</color>
@@ -25,7 +25,7 @@
     <color name="warning">#F59E0B</color>
     <color name="warning_light">#FEF3C7</color>
     
-    <!-- Badge / Option Selection -->
+    <!-- Badges & Selections -->
     <color name="option_selected_bg">#E0E7FF</color>
     <color name="option_selected_stroke">#6366F1</color>
     <color name="unanswered_badge_bg">#FEF2F2</color>

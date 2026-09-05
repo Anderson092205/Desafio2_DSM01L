@@ -11,7 +11,7 @@ import com.google.firebase.auth.FirebaseAuth
 
 class WelcomeActivity : AppCompatActivity() {
     private lateinit var auth: FirebaseAuth
-    private var selectedCategory: String? = null
+    private var selectedCategoryId: String? = null
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -23,25 +23,29 @@ class WelcomeActivity : AppCompatActivity() {
         setContentView(R.layout.activity_welcome)
         findViewById<TextView>(R.id.welcomeUser).text = "Sesión: ${auth.currentUser?.email}"
 
+        // Map button IDs to QuizRepository category IDs
         val categoryButtons = mapOf(
-            R.id.generalKnowledgeButton to "Cultura general",
-            R.id.scienceButton to "Ciencia",
-            R.id.sportsButton to "Deportes",
-            R.id.historyButton to "Historia"
+            R.id.generalKnowledgeButton to "el_salvador",
+            R.id.scienceButton to "cultura_general",
+            R.id.sportsButton to "ciencia",
+            R.id.historyButton to "tecnologia"
         )
-        categoryButtons.forEach { (id, category) ->
-            findViewById<Button>(id).setOnClickListener {
-                selectedCategory = category
-                categoryButtons.keys.forEach { buttonId ->
-                    findViewById<Button>(buttonId).isSelected = buttonId == id
+
+        categoryButtons.forEach { (buttonId, categoryId) ->
+            findViewById<Button>(buttonId).setOnClickListener {
+                selectedCategoryId = categoryId
+                // Visual selection feedback: reset all, mark selected
+                categoryButtons.keys.forEach { id ->
+                    findViewById<Button>(id).isSelected = (id == buttonId)
                 }
-                findViewById<TextView>(R.id.selectedCategoryText).text = "Tipo seleccionado: $category"
+                val displayName = categoryDisplayName(categoryId)
+                findViewById<TextView>(R.id.selectedCategoryText).text = "Tipo seleccionado: $displayName"
             }
         }
 
         findViewById<Button>(R.id.startQuizButton).setOnClickListener {
-            val category = selectedCategory
-            if (category == null) {
+            val catId = selectedCategoryId
+            if (catId == null) {
                 Toast.makeText(this, "Selecciona un tipo de quiz.", Toast.LENGTH_SHORT).show()
                 return@setOnClickListener
             }
@@ -49,11 +53,8 @@ class WelcomeActivity : AppCompatActivity() {
                 R.id.hardRadio -> "Dificil"
                 else -> "Facil"
             }
-            // Contrato para la actividad que implementará la parte del quiz.
-            // Se usa el nombre de clase para que esta parte compile aunque QuizActivity
-            // todavía esté siendo creada por el integrante encargado del quiz.
-            startActivity(Intent().setClassName(this, "$packageName.QuizActivity").apply {
-                putExtra(EXTRA_CATEGORY, category)
+            startActivity(Intent(this, QuizActivity::class.java).apply {
+                putExtra(EXTRA_CATEGORY, catId)
                 putExtra(EXTRA_DIFFICULTY, difficulty)
             })
         }
@@ -62,6 +63,14 @@ class WelcomeActivity : AppCompatActivity() {
             auth.signOut()
             returnToLogin()
         }
+    }
+
+    private fun categoryDisplayName(id: String): String = when (id) {
+        "el_salvador"   -> "El Salvador"
+        "cultura_general" -> "Cultura General"
+        "ciencia"       -> "Ciencia"
+        "tecnologia"    -> "Tecnología"
+        else            -> id
     }
 
     private fun returnToLogin() {

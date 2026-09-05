@@ -9,8 +9,11 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Desafio2DSM">
 
-        <!-- QuizActivity será implementada por la parte encargada del desarrollo del quiz. -->
-        <activity android:name=".QuizActivity" android:exported="false" />
+        <!-- Quiz screen -->
+        <activity
+            android:name=".QuizActivity"
+            android:exported="false"
+            android:windowSoftInputMode="adjustResize" />
 
         <activity
             android:name=".WelcomeActivity"
@@ -30,6 +33,7 @@
             </intent-filter>
 
         </activity>
+
     </application>
 
 </manifest>

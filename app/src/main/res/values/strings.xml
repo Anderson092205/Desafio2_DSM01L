@@ -1,13 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">Desafío Quiz</string>
-    <string name="welcome_title">¡Bienvenido al Desafío Quiz!</string>
-    <string name="welcome_subtitle">Selecciona una categoría para comenzar a responder las preguntas.</string>
-    <string name="btn_start_quiz">Comenzar Quiz</string>
+    <string name="badge_answered">✓ Respondida</string>
+    <string name="badge_pending">○ Pendiente</string>
     <string name="btn_submit_quiz">Enviar Quiz</string>
-    <string name="btn_reset_quiz">Reiniciar Quiz</string>
-    <string name="btn_change_quiz">Cambiar de Quiz</string>
-    <string name="badge_answered">Respondida</string>
-    <string name="badge_pending">Pendiente</string>
-    <string name="validation_error_title">Atención: Preguntas Incompletas</string>
-    <string name="results_dialog_title">Resultado del Quiz</string>
+    <string name="btn_reset_quiz">Reiniciar</string>
+    <string name="btn_back">Regresar</string>
+    <string name="btn_retry">Intentar de nuevo</string>
+    <string name="btn_change_quiz">Elegir otro quiz</string>
+    <string name="btn_review_questions">Ver respuestas</string>
+    <string name="result_title">Resultado del Quiz</string>
 </resources>
