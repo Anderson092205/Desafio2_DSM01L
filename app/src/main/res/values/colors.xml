@@ -2,8 +2,6 @@
 <resources>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
-<<<<<<< Updated upstream
-=======
     
     <!-- Modern Palette -->
     <color name="primary">#4F46E5</color>
@@ -35,5 +33,4 @@
     <color name="answered_badge_bg">#ECFDF5</color>
     <color name="answered_badge_text">#059669</color>
     <color name="badge_hint_text">#3730A3</color>
->>>>>>> Stashed changes
 </resources>

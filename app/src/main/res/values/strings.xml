@@ -1,3 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">desafio2DSM</string>
+    <string name="app_name">Desafío Quiz</string>
+    <string name="badge_answered">✓ Respondida</string>
+    <string name="badge_pending">○ Pendiente</string>
+    <string name="btn_submit_quiz">Enviar Quiz</string>
+    <string name="btn_reset_quiz">Reiniciar</string>
+    <string name="btn_back">Regresar</string>
+    <string name="btn_retry">Intentar de nuevo</string>
+    <string name="btn_change_quiz">Elegir otro quiz</string>
+    <string name="btn_review_questions">Ver respuestas</string>
+    <string name="result_title">Resultado del Quiz</string>
 </resources>

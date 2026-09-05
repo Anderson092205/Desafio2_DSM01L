@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="24dp"
+    android:background="@drawable/bg_dialog_rounded">
+
+    <!-- Icon -->
+    <ImageView
+        android:id="@+id/imgResultBadge"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:layout_gravity="center_horizontal"
+        android:scaleType="centerInside" />
+
+    <!-- Quiz type label -->
+    <TextView
+        android:id="@+id/txtResultCategory"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:gravity="center"
+        android:textSize="13sp"
+        android:textColor="@color/text_secondary"
+        android:textStyle="bold" />
+
+    <!-- Score percentage -->
+    <TextView
+        android:id="@+id/txtScorePercentage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:gravity="center"
+        android:textSize="48sp"
+        android:textColor="@color/primary"
+        android:textStyle="bold" />
+
+    <!-- Score fraction -->
+    <TextView
+        android:id="@+id/txtScoreFraction"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textSize="15sp"
+        android:textColor="@color/text_primary" />
+
+    <!-- Feedback message -->
+    <TextView
+        android:id="@+id/txtResultMessage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:gravity="center"
+        android:textSize="17sp"
+        android:textStyle="bold"
+        android:textColor="@color/text_primary"
+        android:paddingHorizontal="8dp" />
+
+    <!-- Divider -->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginVertical="16dp"
+        android:background="@color/surface_card_stroke" />
+
+    <!-- Review button -->
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnDialogReviewQuestions"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/btn_review_questions"
+        android:textAllCaps="false"
+        app:cornerRadius="12dp" />
+
+    <!-- Retry button -->
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnDialogResetQuiz"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="@string/btn_retry"
+        android:textAllCaps="false"
+        style="@style/Widget.Material3.Button.OutlinedButton"
+        app:cornerRadius="12dp" />
+
+    <!-- Change quiz button -->
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnDialogChangeQuiz"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="@string/btn_change_quiz"
+        android:textAllCaps="false"
+        style="@style/Widget.Material3.Button.TextButton"
+        app:cornerRadius="12dp" />
+
+</LinearLayout>
