@@ -75,7 +75,7 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
-            android:text="🇸🇻  El Salvador"
+            android:text="El Salvador"
             android:textAllCaps="false"
             android:textSize="15sp"
             style="@style/Widget.Material3.Button.OutlinedButton"
@@ -90,7 +90,7 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
-            android:text="🌍  Cultura General"
+            android:text="Cultura General"
             android:textAllCaps="false"
             android:textSize="15sp"
             style="@style/Widget.Material3.Button.OutlinedButton"
@@ -105,7 +105,7 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
-            android:text="🔬  Ciencia"
+            android:text="Ciencia"
             android:textAllCaps="false"
             android:textSize="15sp"
             style="@style/Widget.Material3.Button.OutlinedButton"
@@ -120,7 +120,7 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
-            android:text="💻  Tecnología"
+            android:text="Tecnología"
             android:textAllCaps="false"
             android:textSize="15sp"
             style="@style/Widget.Material3.Button.OutlinedButton"
@@ -174,7 +174,7 @@
                 android:id="@+id/easyRadio"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="⭐ Fácil"
+                android:text="Fácil"
                 android:textSize="14sp" />
 
             <RadioButton
@@ -182,7 +182,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="24dp"
-                android:text="🔥 Difícil"
+                android:text="Difícil"
                 android:textSize="14sp" />
 
         </RadioGroup>
@@ -193,7 +193,7 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
-            android:text="Comenzar Quiz 🚀"
+            android:text="Comenzar Quiz"
             android:textAllCaps="false"
             android:textSize="16sp"
             app:cornerRadius="12dp"
