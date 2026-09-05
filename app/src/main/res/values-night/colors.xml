@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    
+    <!-- Modern Palette (Dark Mode) -->
+    <color name="primary">#818CF8</color>
+    <color name="primary_dark">#6366F1</color>
+    <color name="primary_light">#1E1B4B</color>
+    <color name="secondary">#38BDF8</color>
+    <color name="accent">#A78BFA</color>
+    
+    <!-- Backgrounds & Surfaces (Dark Mode) -->
+    <color name="background_light">#0F172A</color>
+    <color name="surface_card">#1E293B</color>
+    <color name="surface_card_stroke">#334155</color>
+    <color name="text_primary">#F8FAFC</color>
+    <color name="text_secondary">#94A3B8</color>
+    
+    <!-- Status / Feedback (Dark Mode) -->
+    <color name="success">#34D399</color>
+    <color name="success_light">#064E3B</color>
+    <color name="error">#F87171</color>
+    <color name="error_light">#451A1A</color>
+    <color name="warning">#FBBF24</color>
+    <color name="warning_light">#451A03</color>
+    
+    <!-- Badges & Selections (Dark Mode) -->
+    <color name="option_selected_bg">#312E81</color>
+    <color name="option_selected_stroke">#818CF8</color>
+    <color name="unanswered_badge_bg">#450A0A</color>
+    <color name="unanswered_badge_text">#FCA5A5</color>
+    <color name="answered_badge_bg">#022C22</color>
+    <color name="answered_badge_text">#6EE7B7</color>
+    <color name="badge_hint_text">#C7D2FE</color>
+</resources>
