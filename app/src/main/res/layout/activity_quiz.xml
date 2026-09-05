@@ -55,7 +55,7 @@
             android:orientation="horizontal"
             android:gravity="center_vertical"
             android:paddingHorizontal="16dp"
-            android:background="#3730A3">
+            android:background="@color/primary_dark">
 
             <TextView
                 android:id="@+id/txtQuizProgressBadge"

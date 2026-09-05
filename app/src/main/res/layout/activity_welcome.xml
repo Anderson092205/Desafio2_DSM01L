@@ -175,6 +175,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Fácil"
+                android:textColor="@color/text_primary"
                 android:textSize="14sp" />
 
             <RadioButton
@@ -183,6 +184,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="24dp"
                 android:text="Difícil"
+                android:textColor="@color/text_primary"
                 android:textSize="14sp" />
 
         </RadioGroup>

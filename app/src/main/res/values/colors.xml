@@ -32,4 +32,5 @@
     <color name="unanswered_badge_text">#DC2626</color>
     <color name="answered_badge_bg">#ECFDF5</color>
     <color name="answered_badge_text">#059669</color>
+    <color name="badge_hint_text">#3730A3</color>
 </resources>

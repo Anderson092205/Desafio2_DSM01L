@@ -112,7 +112,7 @@ class QuestionAdapter(
                 holder.txtWarning.setCompoundDrawablesWithIntrinsicBounds(0, 0, 0, 0)
                 holder.txtWarning.text = "💡 Respuesta correcta: ${question.options[question.correctAnswerIndex]}"
                 holder.txtWarning.setBackgroundResource(R.drawable.bg_badge)
-                holder.txtWarning.setTextColor(ContextCompat.getColor(context, R.color.primary_dark))
+                holder.txtWarning.setTextColor(ContextCompat.getColor(context, R.color.badge_hint_text))
                 holder.cardQuestion.strokeColor = ContextCompat.getColor(context, R.color.error)
                 holder.cardQuestion.strokeWidth = dpToPx(context, 2)
             }
